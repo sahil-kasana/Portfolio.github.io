@@ -66,7 +66,7 @@
     <!-- About Section -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/photo1704718450-removebg-preview.png" alt="About Image">
+            <img src="images/WhatsApp_Image_2022-12-22_at_11.50.07_AM-removebg-preview.png" alt="About Image">
         </div>
         <div class="about-content">
             <h2>About Me</h2>
@@ -135,8 +135,8 @@
                 <img src="images/rambiharipalace.png"
                     alt="Project 1">
                 <div class="portfolio-hover">
-                    <h3>Rambiharipalace</h3>
-                    <p>Hotel Room Manegment Website</p>
+                    <h3>Rambihari palace</h3>
+                    <!-- <p>Hotel Room Booking Website</p> -->
                     <a href="https://rambiharipalace.com/" class="btn">Try Live</a>
                 </div>
             </div>
@@ -144,21 +144,21 @@
                 <img src="images/Honor the promise of lifelong protection with our symbolic Rakhi designs.png"
                     alt="Project 2">
                 <div class="portfolio-hover">
-                    <h3>Nityam E-commerce</h3>
-                    <p>Showcasing innovative e-commerce solutions for seamless online shopping experiences.</p>
+                    <h3>Nityam Creation</h3>
+                    <!-- <p>e-commerce online shopping.</p> -->
                     <a href="http://nityams.zuluitsolutions.com" class="btn">Try Live</a>
                 </div>
             </div>
-            <!-- <div class="portfolio-item">
-                <img src="images/Honor the promise of lifelong protection with our symbolic Rakhi designs.png"
+           <div class="portfolio-item">
+                <img src="images/project.jpg"
                     alt="Project 3">
                 <div class="portfolio-hover">
-                    <h3>Project Title 3</h3>
-                    <p>Short description of the project goes here.</p>
-                    <a href="#" class="btn">View Details</a>
+                    <h3>AVKWIN SUPPORT</h3>
+                    <!-- <p>Support and blogs Website</p> -->
+                    <a href="https://avk.zuluitsolutions.com" class="btn">Try Live</a>
                 </div>
             </div>
-            <div class="portfolio-item">
+           <!--   <div class="portfolio-item">
                 <img src="images/Honor the promise of lifelong protection with our symbolic Rakhi designs.png"
                     alt="Project 4">
                 <div class="portfolio-hover">
@@ -178,23 +178,34 @@
                 <p>Feel free to drop a message if you have any questions or just want to say hello! I'm always open to
                     discussing new projects, creative ideas, or opportunities to collaborate.</p>
                 <div class="contact-details">
+                    <!-- Clickable phone -->
                     <div class="detail-item">
-                        <i class='bx bx-phone'></i>
-                        <span>+957 184 4068</span>
+                        <a href="tel:+9571844068" class="contact-link">
+                            <i class='bx bx-phone'></i>
+                            <span>+957 184 4068</span>
+                        </a>
                     </div>
+                    <!-- Clickable email -->
                     <div class="detail-item">
-                        <i class='bx bx-envelope'></i>
-                        <span>sahilyogi9571@gmail.com</span>
+                        <a href="mailto:sahilyogi9571@gmail.com" class="contact-link">
+                            <i class='bx bx-envelope'></i>
+                            <span>sahilyogi9571@gmail.com</span>
+                        </a>
                     </div>
+                    <!-- Clickable address -->
                     <div class="detail-item">
-                        <i class='bx bx-map'></i>
-                        <span>VPO Pipli Mundawar, Alwar, India</span>
+                        <a href="https://www.google.com/maps?q=VPO+Pipli+Mundawar,+Alwar,+India" 
+                           target="_blank" 
+                           class="contact-link">
+                            <i class='bx bx-map'></i>
+                            <span>VPO Pipli Mundawar, Alwar, India</span>
+                        </a>
                     </div>
                 </div>
-            </div>
+            </div>            
 
             <div class="contact-form-wrapper">
-                <form class="contact-form" action="your-backend-endpoint" method="POST">
+                <form id="contact-form" class="contact-form">
                     <h3>Send Me a Message</h3>
                     <div class="input-box">
                         <input type="text" name="name" required>
@@ -208,9 +219,13 @@
                         <textarea name="message" required></textarea>
                         <label>Message</label>
                     </div>
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn">
+                        <span class="button-text">Send Message</span>
+                        <span class="button-spinner"></span>
+                    </button>                    
                 </form>
-            </div>
+                <div id="form-message" class="form-message"></div>
+            </div>            
         </div>
     </section>
 
@@ -221,10 +236,8 @@
                 <!-- About Section -->
                 <div class="footer-col">
                     <h4>About Me</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet quam vel lacus
-                        ullamcorper,
-                        ut efficitur velit facilisis.</p>
-                </div>
+                    <p>I am a passionate backend developer specializing in Node.js with a knack for creating efficient and scalable server-side applications. I enjoy solving complex problems and turning ideas into reality through clean and maintainable code.</p>
+                </div>                
 
                 <!-- Useful Links -->
                 <div class="footer-col">
@@ -234,6 +247,7 @@
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">About Me</a></li>
+                        <li><a href="#">Skills</a></li>
                     </ul>
                 </div>
 
@@ -241,9 +255,9 @@
                 <div class="footer-col">
                     <h4>Contact Info</h4>
                     <ul>
-                        <li><a href="mailto:your-email@example.com">Email: sahilyogi9571@gmail.com</a></li>
-                        <li><a href="tel:+123456789">Phone: 9571-844-068</a></li>
-                        <li><a href="#">Location: Alwar, India</a></li>
+                        <li><a href="mailto:sahilyogi9571844068">Email: sahilyogi9571@gmail.com</a></li>
+                        <li><a href="tel:9571844068">Phone: 9571-844-068</a></li>
+                        <li>Location: Alwar, India</li>
                     </ul>
                 </div>
 
@@ -265,6 +279,58 @@
         </div>
     </footer>
 
+    <script>
+document.getElementById("contact-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const formMessage = document.getElementById("form-message");
+    const submitButton = form.querySelector(".btn");
+
+    // Add loading state to button
+    submitButton.classList.add("loading");
+    submitButton.disabled = true;
+
+    try {
+        const response = await fetch("http://localhost:3006/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                name: formData.get("name"),
+                email: formData.get("email"),
+                message: formData.get("message"),
+            }),
+        });
+
+        if (response.ok) {
+            formMessage.textContent = "Thank you for submitting!";
+            formMessage.className = "form-message success";
+
+            // Clear form
+            form.reset();
+        } else {
+            throw new Error("Failed to send email");
+        }
+    } catch (error) {
+        formMessage.textContent = "Failed to send message. Please try again.";
+        formMessage.className = "form-message error";
+    } finally {
+        // Remove loading state and enable button
+        submitButton.classList.remove("loading");
+        submitButton.disabled = false;
+
+        // Remove the message after 3 seconds
+        setTimeout(() => {
+            formMessage.textContent = "";
+            formMessage.className = "form-message";
+        }, 3000);
+    }
+});
+
+ </script>
 
     <script src="script.js"></script>
 </body>
